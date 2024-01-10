@@ -1,7 +1,4 @@
-Spencer Tran
-sdtran@usc.edu
-
-Present proect;
+Project by: Spencer Tran | sdtran@usc.edu
 <h2>Dataset</h2>
 <ul> 
   <li>I chose the <b>ASL dataset</b>, which includes 87,000 <i>200x200x3</i> images with RGB values of [0,255] . </li>
@@ -21,23 +18,46 @@ Present proect;
 </ul>
 <h2>Model Evaluation/Result</h2>
 <ul>
-  <li>results on Validation Data</li>
+  <li>Validation Data Results (17400 images)</li>
+  <img src="confMat.png" alt="confusion matrix" width="500">
   <table>
-  <tr>
-    <th>Metric</th>
-    <th>Value</th> 
-  </tr>
-  <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td> 
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td> 
-
-  </tr>
-</table>
+    <tr>
+      <th>Metric</th>
+      <th>Value</th> 
+    </tr>
+    <tr>
+      <td>accuracy</td>
+      <td>0.995402</td> 
+    </tr>
+    <tr>
+      <td>precision</td>
+      <td>0.995492</td> 
+    </tr>
+    <tr>
+      <td>recall</td>
+      <td>0.995378</td> 
+    </tr>
+    <tr>
+      <td>f1_score</td>
+      <td>0.995389</td> 
+    </tr>
+    <tr>
+      <td>f2_score</td>
+      <td>0.995389</td> 
+    </tr>
+    <tr>
+      <td>auc</td>
+      <td>0.998769</td> 
+    </tr>
+  </table>
+  <li>Testing Data (28 images) had 100% accuracy</li>
 </ul>
-
-model performance
-further implications in society.
+<h2>Discussion</h2>
+How well does your dataset, model architecture, training procedures, and chosen metrics fit the task at hand? 
+Can your efforts be extended to wider implications, or contribute to social good? Are there any limitations in your methods that should be considered before doing so?
+If you were to continue this project, what would be your next steps?
+<ul>
+  <li>This project can be used to classify hand symbols from other sign languages or a variety of hand gestures, which can improve accessibility for deaf people. For example, it can be used to create captions in videos with sign language.</li>
+  <li>Due to the high performance, the ASL dataset, model, and training procedures seem to work well for the task of identifying ASL symbols. However, because the ASL dataset images were so clean and uniform within the different classes, my methods might not be generalizeable for data that is not of a simmilar format.</li>
+  <li>My next steps on this project would be to gather more data and to measure the benefits of using data augmentation, such as flipping the images, in order to improve the data's variety.</li>
+</ul>
