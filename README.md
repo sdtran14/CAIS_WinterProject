@@ -19,7 +19,7 @@ Project by: Spencer Tran | sdtran@usc.edu
 <h2>Model Evaluation/Result</h2>
 <ul>
   <li>Validation Data Results (17400 images)</li>
-  <img src="confMat.png" alt="confusion matrix" width="500">
+  <img src="conMat.png" alt="confusion matrix" width="500">
   <table>
     <tr>
       <th>Metric</th>
